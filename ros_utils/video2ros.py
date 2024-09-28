@@ -4,6 +4,10 @@ from sensor_msgs.msg import CompressedImage
 import numpy as np
 
 class VideoPublisher:
+    """
+    This class reads a video file and publishes the frames
+    to the specified topics at a specified rate.
+    """
     def __init__(self, 
                  video_path, 
                  topic_name,

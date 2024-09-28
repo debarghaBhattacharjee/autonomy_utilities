@@ -46,3 +46,6 @@ __pycache__/
 data/
 input/
 output/
+
+# Ignore RViz configuration files.
+*.rviz

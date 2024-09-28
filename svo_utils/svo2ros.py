@@ -13,10 +13,8 @@ import cv2
 class SVO2ROSBagConverter:
     """
     This class converts a Stereolabs ZED SVO file to a ROS bag file.
-    Specifically, it reads the RGB and depth data from the SVO file
-    and writes them to a ROS bag file as CompressedImage and Image.
-    Additionally, it reads the camera information from the SVO file
-    and writes it to the ROS bag as CameraInfo messages.
+    Depending on the flags set, it reads the RGB data, depth data, and
+    camera information from the SVO file and writes them to a ROS bag file.
     """
     def __init__(self, 
                  svo_file_path, 

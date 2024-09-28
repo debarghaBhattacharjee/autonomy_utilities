@@ -3,6 +3,11 @@ import rosbag
 from sensor_msgs.msg import CompressedImage
 
 class RosbagPublisher:
+    """
+    This class reads messages from a ROS bag file and 
+    publishes them to the specified topics at a specified 
+    rate.
+    """
     def __init__(self, bag_file, topic1, topic2, rate_hz):
         self.bag_file = bag_file
         self.topic1 = topic1

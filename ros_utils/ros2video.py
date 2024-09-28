@@ -16,7 +16,9 @@ class ROSVideoWriter:
                  frame_size=[1920, 1080],
                  rate_hz=10):
         """
-        Video writer class to write video data from a ROS topic.
+        This class subscribes to a ROS topic that publishes
+        CompressedImage messages and writes the received RGB
+        data to a video file.
         """
         self.topic = topic
         self.rgb_data = None

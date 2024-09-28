@@ -5,6 +5,12 @@ import numpy as np
 
 
 class VideoPublisher:
+    """
+    This class reads a video file and publishes the frames
+    to the specified topics at a specified rate.
+    It is a multi-camera version of the 'video2ros.py' 
+    script's VideoPublisher class.
+    """
     def __init__(self, 
                  video_path=None, 
                  cam1_topic_name=None,
