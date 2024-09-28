@@ -1,0 +1,48 @@
+# Ignore Python cache files.
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Ignore checkpoint files (commonly used in
+# machine learning projects).
+checkpoints/
+*.checkpoint
+
+# Ignore rough directories and files.
+rough/
+*rough*
+
+# Ignore Jupyter Notebook checkpoints.
+.ipynb_checkpoints/
+
+# Ignore virtual environment directories.
+venv/
+.env/
+
+# Ignore Numba cached files.
+*.nbi
+
+# Ignore other common files.
+*.log
+*.tmp
+*.bak
+
+# Ignore ROS build and devel directories.
+# Ignore build artifacts and logs.
+build/
+devel/
+logs/
+
+# Ignore Python cache files.
+*.pyc
+__pycache__/
+
+# Ignore workspace-specific files.
+.catkin_workspace
+.vscode/
+
+# Ignore input and output directories.
+data/
+input/
+output/
